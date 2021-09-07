@@ -26,7 +26,16 @@
 
 
 def fibonacci(n: int) -> int:
-    return None
+    i = 0
+    fib1 = 1
+    fib2 = 1
+    while i < n - 2:
+        fib_sum = fib1 + fib2
+        fib1 = fib2
+        fib2 = fib_sum
+        i += 1
+    print(fib2)
+    return fib2
 
 
 if __name__ == '__main__':
