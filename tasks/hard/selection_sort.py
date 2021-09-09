@@ -19,6 +19,13 @@
 
 
 def selection_sort(array: list) -> list:
+    for i in range(0, len(array) - 1):
+        lower = i
+        for j in range(i + 1, len(array)):
+            if array[j] < array[lower]:
+                lower = j
+
+        array[i], array[lower] = array[lower], array[i]
     return array
 
 
