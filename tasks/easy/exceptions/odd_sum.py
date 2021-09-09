@@ -14,7 +14,7 @@ TypeError с сообщением "Все элементы списка долж
 
 def odd_sum(int_list: list) -> int:
     summa = 0
-    for i in range(len(int_list)):
+    for i in int_list:
         if not isinstance(int_list[i], int):
             raise TypeError
         elif int_list[i] % 2 != 0:

@@ -31,13 +31,16 @@ def lets_break(n: int) -> int:
     # Счетчик итераций
     counter = 0
     while True:
-        if current_value < 10:
-            counter += 1
-            current_value += 1
-        else:
+        if current_value >= 10:
             break
-
+        else:
+            current_value += 1
+            counter += 1
     return counter
+
+
+
+
 
 
 if __name__ == '__main__':

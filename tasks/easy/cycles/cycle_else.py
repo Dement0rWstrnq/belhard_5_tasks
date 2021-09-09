@@ -19,8 +19,8 @@ def lets_else(range_val: int) -> int:
     for counter in range(range_val):
         if counter == 7:
             break
-        else:
-            counter = -5
+    else:
+        counter = -5
 
     return counter
 

@@ -13,13 +13,11 @@ min_in_list([7, 2, 4, 6, 1, 4]) -> 1
 
 
 def min_in_list(some_list: list) -> int:
-    for i in range(len(some_list)):
-        min_value = i
-        for j in range(i + 1, len(some_list)):
-            if some_list[j] < some_list[min_value]:
-                min_value = j
-        some_list[i], some_list[min_value] = some_list[min_value], some_list[i]
-    return some_list[0]
+    min_value = some_list[0]
+    for i in some_list:
+        if i < min_value:
+            min_value = i
+    return min_value
 
 
 if __name__ == '__main__':

@@ -58,7 +58,7 @@ if __name__ == '__main__':
     try:
         score = get_score()
         if score < 7:
-            raise ValueError(f"{score}")
+            raise ValueError(score)
         print("Ребенок получил хорошую оценку")
         gift = random_gift()
     except RuntimeError as exc:
